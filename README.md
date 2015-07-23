@@ -31,6 +31,8 @@ pollutantmean("specdata","sulfate",1:10)
 pollutantmean("specdata","nitrate",70:72)
 pollutantmean("specdata","nitrate",23)
 
+
+
 Function for number of observations listed:
 complete <- function(directory, id = 1:332){
   files1_list <- list.files(directory, full.names=TRUE)
@@ -55,6 +57,8 @@ complete("specdata", c(2, 4, 8, 10, 12))
 complete("specdata", 30:25)
 complete("specdata", 3)
 
+
+
 Function for Correlation:
 corr <- function(directory, threshold = 0) 
   {
@@ -67,7 +71,6 @@ corr <- function(directory, threshold = 0)
   }
   return(corrsNum)
 }
-
 complete <- function(directory, id = 1:332) {
   nobsNum <- numeric(0)
   for (cid in id) {
